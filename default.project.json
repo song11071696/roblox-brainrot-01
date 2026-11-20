@@ -1,0 +1,399 @@
+{
+  "name": "brainrot-bay",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Shared": {
+        "$path": "src/shared"
+      }
+    },
+    "ServerScriptService": {
+      "Server": {
+        "$path": "src/server"
+      }
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "Client": {
+          "$path": "src/client"
+        }
+      }
+    },
+    "Lighting": {
+      "$properties": {
+        "Ambient": [0.45, 0.45, 0.45],
+        "Brightness": 3,
+        "ClockTime": 14,
+        "GlobalShadows": true,
+        "OutdoorAmbient": [0.65, 0.65, 0.65],
+        "Outlines": false,
+        "Technology": "Future"
+      }
+    },
+    "SoundService": {
+      "$properties": {
+        "RespectFilteringEnabled": true
+      }
+    },
+    "Workspace": {
+      "$properties": {
+        "FilteringEnabled": true
+      },
+      "Baseplate": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true, "Color": [0.29, 0.72, 0.35], "Locked": true, "Material": "Grass",
+          "Position": [0, -10, 0], "Size": [512, 20, 512], "TopSurface": "Smooth"
+        }
+      },
+      "SpawnLocation": {
+        "$className": "SpawnLocation",
+        "$properties": {
+          "Anchored": true, "Color": [1, 0.85, 0.4], "Duration": 0, "Material": "SmoothPlastic",
+          "Neutral": true, "Position": [0, 1, 100], "Size": [20, 2, 20], "TopSurface": "Smooth"
+        }
+      },
+      "SpawnHill": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true, "Color": [0.85, 0.7, 0.45], "Material": "Sand",
+          "Position": [0, 8.5, 118], "Size": [18, 1, 14], "TopSurface": "Smooth"
+        }
+      },
+      "SpawnHillSign": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true, "Color": [1, 1, 1], "Material": "SmoothPlastic",
+          "Position": [0, 11, 112], "Size": [12, 3, 0.5], "TopSurface": "Smooth"
+        },
+        "SpawnSignGui": {
+          "$className": "SurfaceGui",
+          "$properties": { "Face": "Front" },
+          "SpawnSignText": {
+            "$className": "TextLabel",
+            "$properties": {
+              "BackgroundTransparency": 1, "Font": "GothamBold",
+              "Size": {"UDim2": [[1.0, 0], [1.0, 0]]},
+              "Text": "BRAINROT BAY - high ground, safe from waves!",
+              "TextColor3": [0.1, 0.4, 0.1], "TextScaled": true
+            }
+          }
+        }
+      },
+      "Conveyor": {
+        "BeltBase": {
+          "$className": "Part",
+          "$properties": {
+            "Anchored": true, "Color": [0.25, 0.25, 0.3], "Material": "Metal",
+            "Position": [0, 0.5, -40], "Size": [164, 1, 10], "TopSurface": "Smooth"
+          }
+        },
+        "BeltStripe1": {
+          "$className": "Part",
+          "$properties": {
+            "Anchored": true, "Color": [1, 0.85, 0.2], "Material": "SmoothPlastic",
+            "Position": [-70, 1.1, -40], "Size": [8, 0.2, 10], "TopSurface": "Smooth"
+          }
+        },
+        "BeltStripe2": {
+          "$className": "Part",
+          "$properties": {
+            "Anchored": true, "Color": [0.15, 0.15, 0.15], "Material": "SmoothPlastic",
+            "Position": [-50, 1.1, -40], "Size": [8, 0.2, 10], "TopSurface": "Smooth"
+          }
+        },
+        "BeltStripe3": {
+          "$className": "Part",
+          "$properties": {
+            "Anchored": true, "Color": [1, 0.85, 0.2], "Material": "SmoothPlastic",
+            "Position": [-30, 1.1, -40], "Size": [8, 0.2, 10], "TopSurface": "Smooth"
+          }
+        },
+        "BeltStripe4": {
+          "$className": "Part",
+          "$properties": {
+            "Anchored": true, "Color": [0.15, 0.15, 0.15], "Material": "SmoothPlastic",
+            "Position": [-10, 1.1, -40], "Size": [8, 0.2, 10], "TopSurface": "Smooth"
+          }
+        },
+        "BeltStripe5": {
+          "$className": "Part",
+          "$properties": {
+            "Anchored": true, "Color": [1, 0.85, 0.2], "Material": "SmoothPlastic",
+            "Position": [10, 1.1, -40], "Size": [8, 0.2, 10], "TopSurface": "Smooth"
+          }
+        },
+        "BeltStripe6": {
+          "$className": "Part",
+          "$properties": {
+            "Anchored": true, "Color": [0.15, 0.15, 0.15], "Material": "SmoothPlastic",
+            "Position": [30, 1.1, -40], "Size": [8, 0.2, 10], "TopSurface": "Smooth"
+          }
+        },
+        "BeltStripe7": {
+          "$className": "Part",
+          "$properties": {
+            "Anchored": true, "Color": [1, 0.85, 0.2], "Material": "SmoothPlastic",
+            "Position": [50, 1.1, -40], "Size": [8, 0.2, 10], "TopSurface": "Smooth"
+          }
+        },
+        "BeltStripe8": {
+          "$className": "Part",
+          "$properties": {
+            "Anchored": true, "Color": [0.15, 0.15, 0.15], "Material": "SmoothPlastic",
+            "Position": [70, 1.1, -40], "Size": [8, 0.2, 10], "TopSurface": "Smooth"
+          }
+        },
+        "RailNorth": {
+          "$className": "Part",
+          "$properties": {
+            "Anchored": true, "Color": [0.9, 0.3, 0.3], "Material": "Metal",
+            "Position": [0, 2, -45.5], "Size": [164, 2, 1], "TopSurface": "Smooth"
+          }
+        },
+        "RailSouth": {
+          "$className": "Part",
+          "$properties": {
+            "Anchored": true, "Color": [0.9, 0.3, 0.3], "Material": "Metal",
+            "Position": [0, 2, -34.5], "Size": [164, 2, 1], "TopSurface": "Smooth"
+          }
+        },
+        "GatePostLeft": {
+          "$className": "Part",
+          "$properties": {
+            "Anchored": true, "Color": [1, 0.6, 0.2], "Material": "SmoothPlastic",
+            "Position": [-82, 4, -46], "Size": [2, 8, 2], "TopSurface": "Smooth"
+          }
+        },
+        "GatePostRight": {
+          "$className": "Part",
+          "$properties": {
+            "Anchored": true, "Color": [1, 0.6, 0.2], "Material": "SmoothPlastic",
+            "Position": [-82, 4, -34], "Size": [2, 8, 2], "TopSurface": "Smooth"
+          }
+        },
+        "GateBeam": {
+          "$className": "Part",
+          "$properties": {
+            "Anchored": true, "Color": [1, 0.6, 0.2], "Material": "SmoothPlastic",
+            "Position": [-82, 8.5, -40], "Size": [2, 2, 14], "TopSurface": "Smooth"
+          }
+        },
+        "GateSign": {
+          "$className": "Part",
+          "$properties": {
+            "Anchored": true, "Color": [1, 1, 1], "Material": "SmoothPlastic",
+            "Position": [-82, 11.5, -40], "Size": [1, 4, 12], "TopSurface": "Smooth"
+          },
+          "GateSignGui": {
+            "$className": "SurfaceGui",
+            "$properties": { "Face": "Right" },
+            "GateSignText": {
+              "$className": "TextLabel",
+              "$properties": {
+                "BackgroundTransparency": 1, "Font": "GothamBold",
+                "Size": {"UDim2": [[1.0, 0], [1.0, 0]]},
+                "Text": "BRAINROTS THIS WAY!",
+                "TextColor3": [0.9, 0.3, 0.1], "TextScaled": true
+              }
+            }
+          }
+        },
+        "EndSign": {
+          "$className": "Part",
+          "$properties": {
+            "Anchored": true, "Color": [1, 1, 1], "Material": "SmoothPlastic",
+            "Position": [84, 4, -40], "Size": [1, 4, 10], "TopSurface": "Smooth"
+          },
+          "EndSignGui": {
+            "$className": "SurfaceGui",
+            "$properties": { "Face": "Left" },
+            "EndSignText": {
+              "$className": "TextLabel",
+              "$properties": {
+                "BackgroundTransparency": 1, "Font": "GothamBold",
+                "Size": {"UDim2": [[1.0, 0], [1.0, 0]]},
+                "Text": "END OF THE LINE",
+                "TextColor3": [0.2, 0.2, 0.2], "TextScaled": true
+              }
+            }
+          }
+        },
+        "$className": "Folder"
+      },
+      "Plots": {
+        "Plot1": {
+          "Floor": { "$className": "Part", "$properties": { "Anchored": true, "Color": [1, 0.35, 0.35], "Material": "SmoothPlastic", "Position": [-105, 0.5, 60], "Size": [24, 1, 24], "TopSurface": "Smooth" } },
+          "HighGround": { "$className": "Part", "$properties": { "Anchored": true, "Color": [1, 0.7, 0.7], "Material": "SmoothPlastic", "Position": [-105, 8.5, 68], "Size": [10, 1, 8], "TopSurface": "Smooth" } },
+          "SignPole": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.4, 0.3, 0.2], "Material": "Wood", "Position": [-115, 2, 49], "Size": [0.8, 4, 0.8], "TopSurface": "Smooth" } },
+          "OwnerSign": {
+            "$className": "Part",
+            "$properties": { "Anchored": true, "Color": [1, 1, 1], "Material": "SmoothPlastic", "Position": [-115, 5, 49], "Size": [7, 3, 0.5], "TopSurface": "Smooth" },
+            "SignGui": {
+              "$className": "SurfaceGui",
+              "$properties": { "Face": "Back" },
+              "SignText": { "$className": "TextLabel", "$properties": { "BackgroundTransparency": 1, "Font": "GothamBold", "Size": {"UDim2": [[1.0, 0], [1.0, 0]]}, "Text": "Base 1 - empty plot", "TextColor3": [1, 0.35, 0.35], "TextScaled": true } }
+            }
+          },
+          "PostA": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.8, 0.2, 0.2], "Material": "SmoothPlastic", "Position": [-94, 2, 49], "Size": [1, 4, 1], "TopSurface": "Smooth" } },
+          "PostB": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.8, 0.2, 0.2], "Material": "SmoothPlastic", "Position": [-94, 2, 71], "Size": [1, 4, 1], "TopSurface": "Smooth" } },
+          "$className": "Folder"
+        },
+        "Plot2": {
+          "Floor": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.35, 0.67, 1], "Material": "SmoothPlastic", "Position": [-35, 0.5, 60], "Size": [24, 1, 24], "TopSurface": "Smooth" } },
+          "HighGround": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.7, 0.85, 1], "Material": "SmoothPlastic", "Position": [-35, 8.5, 68], "Size": [10, 1, 8], "TopSurface": "Smooth" } },
+          "SignPole": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.4, 0.3, 0.2], "Material": "Wood", "Position": [-45, 2, 49], "Size": [0.8, 4, 0.8], "TopSurface": "Smooth" } },
+          "OwnerSign": {
+            "$className": "Part",
+            "$properties": { "Anchored": true, "Color": [1, 1, 1], "Material": "SmoothPlastic", "Position": [-45, 5, 49], "Size": [7, 3, 0.5], "TopSurface": "Smooth" },
+            "SignGui": {
+              "$className": "SurfaceGui",
+              "$properties": { "Face": "Back" },
+              "SignText": { "$className": "TextLabel", "$properties": { "BackgroundTransparency": 1, "Font": "GothamBold", "Size": {"UDim2": [[1.0, 0], [1.0, 0]]}, "Text": "Base 2 - empty plot", "TextColor3": [0.35, 0.67, 1], "TextScaled": true } }
+            }
+          },
+          "PostA": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.2, 0.45, 0.9], "Material": "SmoothPlastic", "Position": [-24, 2, 49], "Size": [1, 4, 1], "TopSurface": "Smooth" } },
+          "PostB": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.2, 0.45, 0.9], "Material": "SmoothPlastic", "Position": [-24, 2, 71], "Size": [1, 4, 1], "TopSurface": "Smooth" } },
+          "$className": "Folder"
+        },
+        "Plot3": {
+          "Floor": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.47, 0.86, 0.35], "Material": "SmoothPlastic", "Position": [35, 0.5, 60], "Size": [24, 1, 24], "TopSurface": "Smooth" } },
+          "HighGround": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.75, 1, 0.7], "Material": "SmoothPlastic", "Position": [35, 8.5, 68], "Size": [10, 1, 8], "TopSurface": "Smooth" } },
+          "SignPole": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.4, 0.3, 0.2], "Material": "Wood", "Position": [25, 2, 49], "Size": [0.8, 4, 0.8], "TopSurface": "Smooth" } },
+          "OwnerSign": {
+            "$className": "Part",
+            "$properties": { "Anchored": true, "Color": [1, 1, 1], "Material": "SmoothPlastic", "Position": [25, 5, 49], "Size": [7, 3, 0.5], "TopSurface": "Smooth" },
+            "SignGui": {
+              "$className": "SurfaceGui",
+              "$properties": { "Face": "Back" },
+              "SignText": { "$className": "TextLabel", "$properties": { "BackgroundTransparency": 1, "Font": "GothamBold", "Size": {"UDim2": [[1.0, 0], [1.0, 0]]}, "Text": "Base 3 - empty plot", "TextColor3": [0.47, 0.86, 0.35], "TextScaled": true } }
+            }
+          },
+          "PostA": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.3, 0.65, 0.2], "Material": "SmoothPlastic", "Position": [46, 2, 49], "Size": [1, 4, 1], "TopSurface": "Smooth" } },
+          "PostB": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.3, 0.65, 0.2], "Material": "SmoothPlastic", "Position": [46, 2, 71], "Size": [1, 4, 1], "TopSurface": "Smooth" } },
+          "$className": "Folder"
+        },
+        "Plot4": {
+          "Floor": { "$className": "Part", "$properties": { "Anchored": true, "Color": [1, 0.78, 0.23], "Material": "SmoothPlastic", "Position": [105, 0.5, 60], "Size": [24, 1, 24], "TopSurface": "Smooth" } },
+          "HighGround": { "$className": "Part", "$properties": { "Anchored": true, "Color": [1, 0.9, 0.6], "Material": "SmoothPlastic", "Position": [105, 8.5, 68], "Size": [10, 1, 8], "TopSurface": "Smooth" } },
+          "SignPole": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.4, 0.3, 0.2], "Material": "Wood", "Position": [95, 2, 49], "Size": [0.8, 4, 0.8], "TopSurface": "Smooth" } },
+          "OwnerSign": {
+            "$className": "Part",
+            "$properties": { "Anchored": true, "Color": [1, 1, 1], "Material": "SmoothPlastic", "Position": [95, 5, 49], "Size": [7, 3, 0.5], "TopSurface": "Smooth" },
+            "SignGui": {
+              "$className": "SurfaceGui",
+              "$properties": { "Face": "Back" },
+              "SignText": { "$className": "TextLabel", "$properties": { "BackgroundTransparency": 1, "Font": "GothamBold", "Size": {"UDim2": [[1.0, 0], [1.0, 0]]}, "Text": "Base 4 - empty plot", "TextColor3": [1, 0.78, 0.23], "TextScaled": true } }
+            }
+          },
+          "PostA": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.85, 0.6, 0.1], "Material": "SmoothPlastic", "Position": [116, 2, 49], "Size": [1, 4, 1], "TopSurface": "Smooth" } },
+          "PostB": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.85, 0.6, 0.1], "Material": "SmoothPlastic", "Position": [116, 2, 71], "Size": [1, 4, 1], "TopSurface": "Smooth" } },
+          "$className": "Folder"
+        },
+        "Plot5": {
+          "Floor": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.7, 0.39, 1], "Material": "SmoothPlastic", "Position": [-105, 0.5, -90], "Size": [24, 1, 24], "TopSurface": "Smooth" } },
+          "HighGround": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.85, 0.7, 1], "Material": "SmoothPlastic", "Position": [-105, 8.5, -98], "Size": [10, 1, 8], "TopSurface": "Smooth" } },
+          "SignPole": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.4, 0.3, 0.2], "Material": "Wood", "Position": [-115, 2, -79], "Size": [0.8, 4, 0.8], "TopSurface": "Smooth" } },
+          "OwnerSign": {
+            "$className": "Part",
+            "$properties": { "Anchored": true, "Color": [1, 1, 1], "Material": "SmoothPlastic", "Position": [-115, 5, -79], "Size": [7, 3, 0.5], "TopSurface": "Smooth" },
+            "SignGui": {
+              "$className": "SurfaceGui",
+              "$properties": { "Face": "Front" },
+              "SignText": { "$className": "TextLabel", "$properties": { "BackgroundTransparency": 1, "Font": "GothamBold", "Size": {"UDim2": [[1.0, 0], [1.0, 0]]}, "Text": "Base 5 - empty plot", "TextColor3": [0.7, 0.39, 1], "TextScaled": true } }
+            }
+          },
+          "PostA": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.55, 0.25, 0.9], "Material": "SmoothPlastic", "Position": [-94, 2, -79], "Size": [1, 4, 1], "TopSurface": "Smooth" } },
+          "PostB": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.55, 0.25, 0.9], "Material": "SmoothPlastic", "Position": [-94, 2, -101], "Size": [1, 4, 1], "TopSurface": "Smooth" } },
+          "$className": "Folder"
+        },
+        "Plot6": {
+          "Floor": { "$className": "Part", "$properties": { "Anchored": true, "Color": [1, 0.55, 0.78], "Material": "SmoothPlastic", "Position": [-35, 0.5, -90], "Size": [24, 1, 24], "TopSurface": "Smooth" } },
+          "HighGround": { "$className": "Part", "$properties": { "Anchored": true, "Color": [1, 0.8, 0.9], "Material": "SmoothPlastic", "Position": [-35, 8.5, -98], "Size": [10, 1, 8], "TopSurface": "Smooth" } },
+          "SignPole": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.4, 0.3, 0.2], "Material": "Wood", "Position": [-45, 2, -79], "Size": [0.8, 4, 0.8], "TopSurface": "Smooth" } },
+          "OwnerSign": {
+            "$className": "Part",
+            "$properties": { "Anchored": true, "Color": [1, 1, 1], "Material": "SmoothPlastic", "Position": [-45, 5, -79], "Size": [7, 3, 0.5], "TopSurface": "Smooth" },
+            "SignGui": {
+              "$className": "SurfaceGui",
+              "$properties": { "Face": "Front" },
+              "SignText": { "$className": "TextLabel", "$properties": { "BackgroundTransparency": 1, "Font": "GothamBold", "Size": {"UDim2": [[1.0, 0], [1.0, 0]]}, "Text": "Base 6 - empty plot", "TextColor3": [1, 0.55, 0.78], "TextScaled": true } }
+            }
+          },
+          "PostA": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.9, 0.35, 0.6], "Material": "SmoothPlastic", "Position": [-24, 2, -79], "Size": [1, 4, 1], "TopSurface": "Smooth" } },
+          "PostB": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.9, 0.35, 0.6], "Material": "SmoothPlastic", "Position": [-24, 2, -101], "Size": [1, 4, 1], "TopSurface": "Smooth" } },
+          "$className": "Folder"
+        },
+        "Plot7": {
+          "Floor": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.35, 0.86, 0.86], "Material": "SmoothPlastic", "Position": [35, 0.5, -90], "Size": [24, 1, 24], "TopSurface": "Smooth" } },
+          "HighGround": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.7, 1, 1], "Material": "SmoothPlastic", "Position": [35, 8.5, -98], "Size": [10, 1, 8], "TopSurface": "Smooth" } },
+          "SignPole": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.4, 0.3, 0.2], "Material": "Wood", "Position": [25, 2, -79], "Size": [0.8, 4, 0.8], "TopSurface": "Smooth" } },
+          "OwnerSign": {
+            "$className": "Part",
+            "$properties": { "Anchored": true, "Color": [1, 1, 1], "Material": "SmoothPlastic", "Position": [25, 5, -79], "Size": [7, 3, 0.5], "TopSurface": "Smooth" },
+            "SignGui": {
+              "$className": "SurfaceGui",
+              "$properties": { "Face": "Front" },
+              "SignText": { "$className": "TextLabel", "$properties": { "BackgroundTransparency": 1, "Font": "GothamBold", "Size": {"UDim2": [[1.0, 0], [1.0, 0]]}, "Text": "Base 7 - empty plot", "TextColor3": [0.35, 0.86, 0.86], "TextScaled": true } }
+            }
+          },
+          "PostA": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.2, 0.65, 0.65], "Material": "SmoothPlastic", "Position": [46, 2, -79], "Size": [1, 4, 1], "TopSurface": "Smooth" } },
+          "PostB": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.2, 0.65, 0.65], "Material": "SmoothPlastic", "Position": [46, 2, -101], "Size": [1, 4, 1], "TopSurface": "Smooth" } },
+          "$className": "Folder"
+        },
+        "Plot8": {
+          "Floor": { "$className": "Part", "$properties": { "Anchored": true, "Color": [1, 0.51, 0.23], "Material": "SmoothPlastic", "Position": [105, 0.5, -90], "Size": [24, 1, 24], "TopSurface": "Smooth" } },
+          "HighGround": { "$className": "Part", "$properties": { "Anchored": true, "Color": [1, 0.75, 0.55], "Material": "SmoothPlastic", "Position": [105, 8.5, -98], "Size": [10, 1, 8], "TopSurface": "Smooth" } },
+          "SignPole": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.4, 0.3, 0.2], "Material": "Wood", "Position": [95, 2, -79], "Size": [0.8, 4, 0.8], "TopSurface": "Smooth" } },
+          "OwnerSign": {
+            "$className": "Part",
+            "$properties": { "Anchored": true, "Color": [1, 1, 1], "Material": "SmoothPlastic", "Position": [95, 5, -79], "Size": [7, 3, 0.5], "TopSurface": "Smooth" },
+            "SignGui": {
+              "$className": "SurfaceGui",
+              "$properties": { "Face": "Front" },
+              "SignText": { "$className": "TextLabel", "$properties": { "BackgroundTransparency": 1, "Font": "GothamBold", "Size": {"UDim2": [[1.0, 0], [1.0, 0]]}, "Text": "Base 8 - empty plot", "TextColor3": [1, 0.51, 0.23], "TextScaled": true } }
+            }
+          },
+          "PostA": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.85, 0.35, 0.1], "Material": "SmoothPlastic", "Position": [116, 2, -79], "Size": [1, 4, 1], "TopSurface": "Smooth" } },
+          "PostB": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.85, 0.35, 0.1], "Material": "SmoothPlastic", "Position": [116, 2, -101], "Size": [1, 4, 1], "TopSurface": "Smooth" } },
+          "$className": "Folder"
+        },
+        "$className": "Folder"
+      },
+      "Decor": {
+        "Pond": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.15, 0.55, 1], "Material": "Water", "Position": [-60, 0.6, 110], "Size": [40, 1, 26], "TopSurface": "Smooth" } },
+        "SandNorth": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.95, 0.85, 0.6], "Material": "Sand", "Position": [-60, 0.4, 95], "Size": [44, 0.8, 4], "TopSurface": "Smooth" } },
+        "SandSouth": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.95, 0.85, 0.6], "Material": "Sand", "Position": [-60, 0.4, 125], "Size": [44, 0.8, 4], "TopSurface": "Smooth" } },
+        "Rock1": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.5, 0.5, 0.5], "Material": "Slate", "Position": [-140, 1.5, 20], "Size": [6, 3, 5], "TopSurface": "Smooth" } },
+        "Rock2": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.55, 0.55, 0.55], "Material": "Slate", "Position": [140, 1.5, 0], "Size": [7, 3, 6], "TopSurface": "Smooth" } },
+        "Rock3": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.5, 0.5, 0.5], "Material": "Slate", "Position": [60, 1.5, 120], "Size": [5, 3, 5], "TopSurface": "Smooth" } },
+        "Rock4": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.55, 0.55, 0.55], "Material": "Slate", "Position": [-150, 1.5, -110], "Size": [6, 3, 6], "TopSurface": "Smooth" } },
+        "Palm1Trunk": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.5, 0.35, 0.2], "Material": "Wood", "Position": [-130, 4, 90], "Size": [2, 8, 2], "TopSurface": "Smooth" } },
+        "Palm1Leaves": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.2, 0.7, 0.3], "Material": "SmoothPlastic", "Position": [-130, 9, 90], "Size": [10, 1, 10], "TopSurface": "Smooth" } },
+        "Palm2Trunk": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.5, 0.35, 0.2], "Material": "Wood", "Position": [130, 4, 90], "Size": [2, 8, 2], "TopSurface": "Smooth" } },
+        "Palm2Leaves": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.2, 0.7, 0.3], "Material": "SmoothPlastic", "Position": [130, 9, 90], "Size": [10, 1, 10], "TopSurface": "Smooth" } },
+        "Palm3Trunk": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.5, 0.35, 0.2], "Material": "Wood", "Position": [-140, 4, -60], "Size": [2, 8, 2], "TopSurface": "Smooth" } },
+        "Palm3Leaves": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.25, 0.75, 0.3], "Material": "SmoothPlastic", "Position": [-140, 9, -60], "Size": [10, 1, 10], "TopSurface": "Smooth" } },
+        "Palm4Trunk": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.5, 0.35, 0.2], "Material": "Wood", "Position": [140, 4, -60], "Size": [2, 8, 2], "TopSurface": "Smooth" } },
+        "Palm4Leaves": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.25, 0.75, 0.3], "Material": "SmoothPlastic", "Position": [140, 9, -60], "Size": [10, 1, 10], "TopSurface": "Smooth" } },
+        "Palm5Trunk": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.5, 0.35, 0.2], "Material": "Wood", "Position": [-70, 4, 130], "Size": [2, 8, 2], "TopSurface": "Smooth" } },
+        "Palm5Leaves": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.2, 0.7, 0.3], "Material": "SmoothPlastic", "Position": [-70, 9, 130], "Size": [10, 1, 10], "TopSurface": "Smooth" } },
+        "Palm6Trunk": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.5, 0.35, 0.2], "Material": "Wood", "Position": [80, 4, 130], "Size": [2, 8, 2], "TopSurface": "Smooth" } },
+        "Palm6Leaves": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.2, 0.7, 0.3], "Material": "SmoothPlastic", "Position": [80, 9, 130], "Size": [10, 1, 10], "TopSurface": "Smooth" } },
+        "BeachBall": { "$className": "Part", "$properties": { "Anchored": true, "Color": [1, 0.4, 0.6], "Material": "SmoothPlastic", "Shape": "Ball", "Position": [-45, 2, 105], "Size": [4, 4, 4], "TopSurface": "Smooth" } },
+        "BeachSign": {
+          "$className": "Part",
+          "$properties": { "Anchored": true, "Color": [1, 1, 1], "Material": "SmoothPlastic", "Position": [-60, 3, 132], "Size": [10, 3, 0.5], "TopSurface": "Smooth" },
+          "BeachSignGui": {
+            "$className": "SurfaceGui",
+            "$properties": { "Face": "Back" },
+            "BeachSignText": { "$className": "TextLabel", "$properties": { "BackgroundTransparency": 1, "Font": "GothamBold", "Size": {"UDim2": [[1.0, 0], [1.0, 0]]}, "Text": "BRAINROT BEACH - swim at your own risk!", "TextColor3": [0.1, 0.4, 0.8], "TextScaled": true } }
+          }
+        },
+        "UmbrellaPole": { "$className": "Part", "$properties": { "Anchored": true, "Color": [0.8, 0.8, 0.8], "Material": "Metal", "Position": [45, 3, 105], "Size": [1, 6, 1], "TopSurface": "Smooth" } },
+        "UmbrellaTop": { "$className": "Part", "$properties": { "Anchored": true, "Color": [1, 0.5, 0.2], "Material": "SmoothPlastic", "Position": [45, 6.5, 105], "Size": [12, 1, 12], "TopSurface": "Smooth" } },
+        "$className": "Folder"
+      }
+    }
+  }
+}

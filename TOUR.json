@@ -1,0 +1,1 @@
+{"steps":[{"screenshot":"1-start.png"},{"call":{"fn":"spawnBrainrot","module":"ServerScriptService.Server.Conveyor","on":"Server"},"keys":["E"],"screenshot":"2-play.png","wait_ms":1000},{"call":{"fn":"strike","module":"ServerScriptService.Server.Tsunami","on":"Server"},"keys":["E"],"screenshot":"3-end.png","wait_ms":1000}],"tour":1}
